@@ -8,6 +8,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  document.getElementById("connect").onclick = function() {  
+    login = document.getElementById("inputLogin").value;
+    password = document.getElementById("inputPassword").value;
+    if (login == 'bourque_r' && password == 'bourque_r'){
+      document.location.href = 'administration.html';
+    } else {
+      document.getElementById("modelerror").style.display = "block";
+    }
+  }; 
+
   /**
    * Preloader
    */
