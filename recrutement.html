@@ -218,6 +218,17 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+      document.getElementById("connect").onclick = function() {  
+    login = document.getElementById("inputLogin").value;
+    password = document.getElementById("inputPassword").value;
+    if (login == 'bourque_r' && password == 'bourque_r'){
+      document.location.href = 'administration.html';
+    } else {
+      document.getElementById("modelerror").style.display = "block";
+    }
+  }; 
+  </script>
 </body>
 
 </html>
